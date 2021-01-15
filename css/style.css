@@ -23,18 +23,40 @@ a {
   display: none;
 }
 
-.about-wrapper,
-.services-border-cutter,
-.activities-wrapper,
-.contacts-wrapper {
+.decorate-block-wrapper {
   width: 56.375rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.about__title,
-.services__title,
-.activities__title,
-.contacts__title {
+.decorate-block__title {
+  display: block;
   width: 25.875rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: -1rem;
+  font-size: 1.875rem;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 7.9px;
+  white-space: nowrap;
+  color: #3c3c3c;
+  background-color: white;
+  z-index: 10;
+}
+
+.decorate-block__text {
+  display: block;
+  width: 62.25%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.5rem;
+  line-height: 32px;
+  text-align: center;
+  font-weight: 300;
+  color: #3c3c3c;
 }
 
 .promo {
@@ -110,40 +132,15 @@ a {
 }
 
 .about-wrapper {
-  margin-left: auto;
-  margin-right: auto;
   border: 2px solid #3c3c3c;
 }
 
 .about__title {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 2.625rem;
-  position: relative;
-  top: -1rem;
-  font-size: 1.875rem;
-  text-align: center;
-  font-weight: 700;
-  color: #3c3c3c;
-  text-transform: uppercase;
-  letter-spacing: 7.9px;
-  white-space: nowrap;
-  background-color: white;
-  z-index: 10;
 }
 
 .about__text {
-  display: block;
-  width: 62.25%;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 4.4375rem;
-  font-size: 1.5rem;
-  line-height: 32px;
-  text-align: center;
-  font-weight: 300;
-  color: #3c3c3c;
 }
 
 .services-wrapper {
@@ -169,6 +166,7 @@ a {
 
 .services-border-cutter {
   height: fit-content;
+  width: 56.375rem;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
@@ -181,6 +179,7 @@ a {
 
 .services__title {
   display: block;
+  width: 25.875rem;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 3.3125rem;
@@ -235,27 +234,11 @@ a {
 }
 
 .activities-wrapper {
-  width: 56.375rem;
-  margin-left: auto;
-  margin-right: auto;
   border: 2px solid #3c3c3c;
 }
 
 .activities__title {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 6.375rem;
-  position: relative;
-  top: -1rem;
-  font-size: 1.875rem;
-  text-align: center;
-  font-weight: 700;
-  color: #3c3c3c;
-  text-transform: uppercase;
-  letter-spacing: 7.9px;
-  white-space: nowrap;
-  background-color: white;
 }
 
 .activities .activity {
@@ -335,41 +318,15 @@ a {
 }
 
 .contacts-wrapper {
-  margin-left: auto;
-  margin-right: auto;
   border: 2px solid #3c3c3c;
 }
 
 .contacts__title {
-  display: block;
-  width: 25.875rem;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 2.625rem;
-  position: relative;
-  top: -1rem;
-  font-size: 1.875rem;
-  text-align: center;
-  font-weight: 700;
-  color: #3c3c3c;
-  text-transform: uppercase;
-  letter-spacing: 7.9px;
-  white-space: nowrap;
-  background-color: white;
-  z-index: 10;
 }
 
 .contacts__text {
-  display: block;
-  width: 62.25%;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 3.125rem;
-  font-size: 1.5rem;
-  line-height: 32px;
-  text-align: center;
-  font-weight: 300;
-  color: #3c3c3c;
 }
 
 .contacts__button {

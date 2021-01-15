@@ -40,19 +40,15 @@
 }
 
 @media (max-width: 1199px) {
-  .about-wrapper,
-  .services-border-cutter,
-  .activities-wrapper,
-  .contacts-wrapper {
+  .decorate-block-wrapper,
+  .services-border-cutter {
     width: 75%;
   }
 }
 
 @media (max-width: 992px) {
-  .about-wrapper,
-  .services-border-cutter,
-  .activities-wrapper,
-  .contacts-wrapper {
+  .decorate-block-wrapper,
+  .services-border-cutter {
     width: 35rem;
   }
 
@@ -70,17 +66,13 @@
 }
 
 @media (max-width: 767px) {
-  .about-wrapper,
-  .services-border-cutter,
-  .activities-wrapper,
-  .contacts-wrapper {
+  .decorate-block-wrapper,
+  .services-border-cutter {
     width: 75%;
   }
 
-  .about__title,
-  .services__title,
-  .activities__title,
-  .contacts__title {
+  .decorate-block__title,
+  .services__title {
     width: 67.5%;
 
     white-space: normal;
@@ -114,24 +106,19 @@
 }
 
 @media (max-width: 480px) {
-  .about-wrapper,
-  .services-border-cutter,
-  .activities-wrapper,
-  .contacts-wrapper {
+  .decorate-block-wrapper,
+  .services-border-cutter {
     width: 90%;
   }
 
-  .about__title,
-  .services__title,
-  .activities__title,
-  .contacts__title {
+  .decorate-block__title,
+  .services__title {
     width: 75%;
   }
 
-  .about__text,
+  .decorate-block__text,
   .services__text,
-  .activities__text,
-  .contacts__text {
+  .activities__text {
     text-align: left;
 
     font-size: 1rem;
