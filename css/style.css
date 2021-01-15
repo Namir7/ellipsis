@@ -10,7 +10,6 @@ body {
 
 a {
   outline: none;
-  cursor: pointer;
 }
 
 .container {
@@ -138,6 +137,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   border: 2px solid #ffffff;
+  border-top: none;
 }
 
 .services-background {
@@ -168,6 +168,10 @@ a {
   z-index: 10;
 }
 
+.services__title::before {
+  content: "";
+}
+
 .services__text {
   display: block;
   width: 62.25%;
@@ -191,7 +195,6 @@ a {
   margin-left: auto;
   margin-right: auto;
   border: 2px solid #3c3c3c;
-  border-top: none;
 }
 
 .activities__title {
@@ -235,6 +238,7 @@ a {
 
 .activities .activity__image {
   width: 5rem;
+  fill: #3c3c3c;
 }
 
 .activities .activity__text {
@@ -245,20 +249,21 @@ a {
   text-align: center;
 }
 
-.items-wrapper {
+.products-wrapper {
   display: grid;
   grid-template-columns: 1fr 1.4635fr 1fr;
   grid-template-rows: 14.8125rem 14.8125rem;
   gap: 0.625rem;
 }
 
-.items .item {
+.products .product {
+  display: block;
   padding-top: 10.5625rem;
   position: relative;
   overflow: hidden;
 }
 
-.items .item__image {
+.products .product__image {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -269,7 +274,7 @@ a {
   z-index: -10;
 }
 
-.items .item__name {
+.products .product__name {
   width: fit-content;
   margin-left: 2.6875rem;
   color: #ffffff;
@@ -335,7 +340,6 @@ a {
   margin-bottom: 3.625rem;
   padding-top: 1.3125rem;
   background-color: #3c3c3c;
-  border: 2px solid #3c3c3c;
   color: #ffffff;
   font-size: 1rem;
   font-weight: 700;
@@ -353,13 +357,4 @@ a {
   color: #3c3c3c;
   font-size: 16px;
   font-weight: 300;
-}
-
-@media (max-width: 1920px) {
-  .promo__logo-link {
-    margin-top: 14.895vw;
-  }
-  .promo__text {
-    margin-bottom: 12.5vw;
-  }
 }
