@@ -1,4 +1,4 @@
 # ellipsis
 landing page 
 
-[![](https://ibb.co/YNFnpcY)](https://ibb.co/YNFnpcY)
+![project image](https://ibb.co/YNFnpcY)
