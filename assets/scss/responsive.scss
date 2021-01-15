@@ -53,15 +53,19 @@
   }
 
   .promo {
+    &-wrapper {
+      background-position: center;
+    }
+
     &__title {
       width: 85%;
     }
   }
+}
 
-  .services {
-    &-background {
-      background-position: center;
-    }
+.services {
+  &-background {
+    background-position: center;
   }
 }
 
@@ -144,7 +148,7 @@
       margin-bottom: 1.375em;
 
       font-size: 3rem;
-      letter-spacing: 0.5rem;
+      letter-spacing: 0.4rem;
       text-align: left;
     }
 
