@@ -37,12 +37,16 @@
   .services-border-cutter {
     width: 35rem;
   }
+  .promo-wrapper {
+    background-position: center;
+  }
   .promo__title {
     width: 85%;
   }
-  .services-background {
-    background-position: center;
-  }
+}
+
+.services-background {
+  background-position: center;
 }
 
 @media (max-width: 767px) {
