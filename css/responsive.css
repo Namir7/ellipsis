@@ -1,8 +1,205 @@
-@media (max-width: 1920px) {
+@media (max-width: 1919px) {
   .promo__logo-link {
-    margin-top: 14.895vw;
+    margin-top: 12.895vw;
+  }
+  .promo__logo-image {
+    width: 7.0625rem;
+    height: 7.3125rem;
+  }
+  .products-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .products .product__image {
+    width: 120%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 1439px) {
+  .promo__title {
+    margin-bottom: 6.375rem;
+  }
+  .products-wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 14.8125rem 14.8125rem 14.8125rem;
+  }
+}
+
+@media (max-width: 1199px) {
+  .about-wrapper,
+  .services-border-cutter,
+  .activities-wrapper,
+  .contacts-wrapper {
+    width: 75%;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-wrapper,
+  .services-border-cutter,
+  .activities-wrapper,
+  .contacts-wrapper {
+    width: 35rem;
+  }
+  .promo__title {
+    width: 85%;
+  }
+  .services-background {
+    background-position: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-wrapper,
+  .services-border-cutter,
+  .activities-wrapper,
+  .contacts-wrapper {
+    width: 75%;
+  }
+  .about__title,
+  .services__title,
+  .activities__title,
+  .contacts__title {
+    width: 67.5%;
+    white-space: normal;
+  }
+  .promo-wrapper {
+    background-position: center;
   }
   .promo__text {
-    margin-bottom: 12.5vw;
+    width: 58%;
+    margin-bottom: 0;
+  }
+  .promo__scroll-down {
+    display: none;
+  }
+  .products-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+  .products .product__name {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-wrapper,
+  .services-border-cutter,
+  .activities-wrapper,
+  .contacts-wrapper {
+    width: 90%;
+  }
+  .about__title,
+  .services__title,
+  .activities__title,
+  .contacts__title {
+    width: 75%;
+  }
+  .about__text,
+  .services__text,
+  .activities__text,
+  .contacts__text {
+    text-align: left;
+    font-size: 1rem;
+  }
+  .promo {
+    min-height: 950px;
+  }
+  .promo-wrapper {
+    height: 950px;
+  }
+  .promo__logo-link {
+    margin-top: 2.895rem;
+    margin-bottom: 2.75rem;
+  }
+  .promo__title {
+    margin-left: 1rem;
+    margin-right: 0;
+    margin-bottom: 1.375em;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    text-align: left;
+  }
+  .promo__text {
+    margin-right: 1rem;
+    margin-left: auto;
+    margin-bottom: 0;
+    font-size: 1.75rem;
+    text-align: left;
+  }
+  .about {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+  .about__title {
+    margin-bottom: 0.625rem;
+  }
+  .about__text {
+    margin-right: 0;
+    margin-left: 1rem;
+    margin-bottom: 2.4375rem;
+  }
+  .services-wrapper {
+    margin-top: 4.5rem;
+    margin-bottom: 4.5rem;
+  }
+  .services__title {
+    margin-bottom: 0.625rem;
+  }
+  .services__text {
+    margin-left: auto;
+    margin-right: 1rem;
+  }
+  .activities {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+  .activities__title {
+    margin-bottom: 0.625rem;
+  }
+  .activities .activity {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+  }
+  .activities .activity__text {
+    width: 75%;
+    font-size: 1rem;
+  }
+  .activities .activity:nth-of-type(2n + 1) {
+    padding-left: 1rem;
+    align-items: start;
+  }
+  .activities .activity:nth-of-type(2n + 1) .activity__title {
+    text-align: left;
+  }
+  .activities .activity:nth-of-type(2n + 1) .activity__text {
+    text-align: left;
+  }
+  .activities .activity:nth-of-type(2n) {
+    padding-right: 1rem;
+    align-items: flex-end;
+  }
+  .activities .activity:nth-of-type(2n) .activity__text {
+    text-align: right;
+  }
+  .products .product__name {
+    margin-left: 1.5rem;
+  }
+  .contacts {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+  .contacts__title {
+    margin-bottom: 0.625rem;
+  }
+  .contacts__text {
+    margin-bottom: 2.125rem;
+    text-align: center;
+  }
+  .contacts__button {
+    font-size: 0.75rem;
+    padding-top: 1.325rem;
   }
 }

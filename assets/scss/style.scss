@@ -10,7 +10,7 @@ body {
 
 a {
   outline: none;
-  // cursor: pointer;
+  cursor: pointer;
 }
 
 .container {
@@ -21,6 +21,20 @@ a {
 
 .hidden {
   display: none;
+}
+
+.about-wrapper,
+.services-border-cutter,
+.activities-wrapper,
+.contacts-wrapper {
+  width: 56.375rem;
+}
+
+.about__title,
+.services__title,
+.activities__title,
+.contacts__title {
+  width: 25.875rem;
 }
 
 //main sections
@@ -52,12 +66,15 @@ a {
     &-image {
       width: 4.0625rem;
       height: 4.3125rem;
+
+      fill: white;
+      stroke: white;
     }
   }
 
   &__title {
     display: block;
-    width: 38%;
+    width: 48rem;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2.375rem;
@@ -74,18 +91,19 @@ a {
 
   &__text {
     display: block;
-    width: 38%;
+    width: 32.5rem;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 15.125rem;
+    margin-bottom: 11.125rem;
 
     font-size: 1.5rem;
     line-height: 32px;
     text-align: center;
     color: white;
+    font-weight: 300;
   }
 
-  &__scroll-down-image {
+  &__scroll-down {
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -100,7 +118,6 @@ a {
   padding-bottom: 9.5rem;
 
   &-wrapper {
-    width: 46.875%;
     margin-left: auto;
     margin-right: auto;
 
@@ -109,7 +126,6 @@ a {
 
   &__title {
     display: block;
-    width: 25.875rem;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2.625rem;
@@ -146,11 +162,10 @@ a {
 
 .services {
   &-wrapper {
-    width: 46.875%;
+    width: 100%;
+    height: fit-content;
     margin-top: 10.3125rem;
     margin-bottom: 9.5rem;
-    margin-left: auto;
-    margin-right: auto;
 
     border: 2px solid #ffffff;
     border-top: none;
@@ -158,18 +173,33 @@ a {
 
   &-background {
     width: 100%;
-    height: 570px;
+    min-height: 570px;
+    height: fit-content;
 
     background-image: url(../assets/img/services_bg.png);
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 1px;
+    padding-bottom: 1px;
+  }
+
+  &-border-cutter {
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+
+    overflow: hidden;
+
+    &__help-text {
+      height: 0;
+
+      visibility: hidden;
+    }
   }
 
   &__title {
     display: block;
-    width: 25.875rem;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 3.3125rem;
@@ -187,9 +217,30 @@ a {
 
     z-index: 10;
 
-    &::before{
+    &::before {
       content: "";
-      
+
+      display: block;
+      width: 1000px;
+
+      position: absolute;
+      top: 50%;
+      left: -1000px;
+
+      border-bottom: 2px solid white;
+    }
+
+    &::after {
+      content: "";
+
+      display: block;
+      width: 1000px;
+
+      position: absolute;
+      top: 50%;
+      right: -1000px;
+
+      border-bottom: 2px solid white;
     }
   }
 
@@ -213,7 +264,7 @@ a {
   padding-bottom: 9.5rem;
 
   &-wrapper {
-    width: 46.875%;
+    width: 56.375rem;
     margin-left: auto;
     margin-right: auto;
 
@@ -222,7 +273,6 @@ a {
 
   &__title {
     display: block;
-    width: 25.875rem;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 6.375rem;
@@ -328,7 +378,6 @@ a {
   padding-bottom: 9.5rem;
 
   &-wrapper {
-    width: 46.875%;
     margin-left: auto;
     margin-right: auto;
 
@@ -399,7 +448,7 @@ a {
     width: fit-content;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 3.90625vw;
+    margin-bottom: 4.6875rem;
 
     color: #3c3c3c;
     font-size: 16px;

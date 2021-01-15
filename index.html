@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ellipsis</title>
     <!-- icon -->
-    <link rel="shortcut icon" href="assets/img/icon.svg" type="image/svg">
+    <link rel="shortcut icon" href="assets/img/favicon.svg" type="image/svg">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
@@ -23,19 +23,17 @@
     <!-- sprite -->
     <svg display="none">
 
-        <symbol id="sprite__logo" viewBox="0 0 65 69">
-            <image
-                xlink:href="data:image/png;base64,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"
-                width="65" height="69" transform="matrix(1,0,0,1,0,0)"></image>
+        <symbol id="sprite__logo" viewBox="0 0 821 1026">
+            <path
+                d="M807 399.5C807 620.138 628.138 799 407.5 799C186.862 799 8 620.138 8 399.5C8 178.862 186.862 0 407.5 0C628.138 0 807 178.862 807 399.5ZM21.1619 399.5C21.1619 612.869 194.131 785.838 407.5 785.838C620.869 785.838 793.838 612.869 793.838 399.5C793.838 186.131 620.869 13.1619 407.5 13.1619C194.131 13.1619 21.1619 186.131 21.1619 399.5Z" />
+            <path d="M67.5961 800L410.5 167.732L753.404 800H67.5961Z" stroke-width="15" fill="none" />
+            <circle cx="60" cy="800" r="40" />
+            <circle cx="410" cy="800" r="40" />
+            <circle cx="738" cy="800" r="40" />
 
         </symbol>
 
-        <symbol id="sprite__mouse" viewBox="0 0 23 37">
-            <path fill="#fff"
-                d="M13.154 11.416a1.66 1.66 0 0 1-1.657 1.659 1.66 1.66 0 0 1 0-3.318 1.66 1.66 0 0 1 1.657 1.66zM12.45-.007c5.932.478 10.545 5.451 10.545 11.423V25.49c0 6.347-5.158 11.511-11.5 11.511C5.157 37.001 0 31.837 0 25.491V11.415C-.001 5.441 4.612.468 10.543-.007zm8.637 25.497V11.416c0-5.295-4.303-9.601-9.591-9.601-5.289 0-9.59 4.306-9.59 9.6V25.49c0 5.295 4.302 9.601 9.59 9.601s9.59-4.306 9.59-9.601z" />
-        </symbol>
-
-        <symbol id="sprite__design" viewBox="0 0 80 83>">
+        <symbol id="sprite__design" viewBox="0 0 80 83">
             <path
                 d="M79.98 2.014v12.263c0 1.125-.899 2.025-2.024 2.025H66.032c-1.125 0-2.025-.9-2.025-2.025v-4.163H41.959c.225 4.838 12.261 28.24 19.91 41.965.45.788.226 1.913-.45 2.475-6.861 5.85-8.549 11.589-8.999 14.513h2.588c1.125 0 2.024.9 2.024 2.025v9.901c0 1.125-.9 2.025-2.024 2.025H25.085c-1.125 0-2.025-.9-2.025-2.025v-9.9c0-1.126.9-2.026 2.025-2.026h2.587c-.45-2.924-2.137-8.663-9-14.513-.674-.675-.9-1.687-.45-2.475 7.65-13.725 19.687-37.014 19.912-41.965H15.973v4.163c0 1.125-.9 2.025-2.025 2.025H2.024c-1.125 0-2.025-.9-2.025-2.025V2.014C0 .889.9-.011 2.024-.011h11.812c1.125 0 2.024.9 2.024 2.025v4.163h48.147V2.014c0-1.125.9-2.025 2.025-2.025h11.924c1.125 0 2.025.9 2.025 2.025zM11.924 3.926H3.936v8.326h7.987zM37.46 47.804c0 1.463 1.125 2.588 2.587 2.588 1.463 0 2.588-1.125 2.588-2.588s-1.125-2.588-2.588-2.588c-1.35 0-2.587 1.238-2.587 2.588zm15.636 25.089H27.11v5.962h25.985zm4.612-20.364c-2.7-5.063-10.686-19.913-15.636-30.939v20.026c2.587.9 4.5 3.262 4.5 6.188a6.53 6.53 0 0 1-6.525 6.525 6.53 6.53 0 0 1-6.524-6.525c0-2.926 1.912-5.4 4.5-6.188V21.702C33.183 32.728 25.084 47.58 22.384 52.53c7.087 6.638 8.774 13.163 9.224 16.426h16.874c.45-3.263 2.137-9.788 9.224-16.426zm18.337-48.49h-7.987V12.252h7.987z" />
         </symbol>
@@ -73,7 +71,7 @@
                         between
                         development, design and product management.
                     </p>
-                    <div class='promo__scroll-down-image icon-scroll'></div>
+                    <div class='promo__scroll-down icon-scroll'></div>
                 </div>
             </div>
         </section>
@@ -96,16 +94,21 @@
         <section class="services">
             <div class="container">
                 <div class="services-background">
-                    <div class="services-wrapper">
-                        <h2 class="services__title">
-                            SERVICES
-                        </h2>
-                        <p class="services__text">
-                            Before we sign a contract or write a line of code our team will spend the necessary time
-                            needed
-                            to understand your product vision. Based on your requirements, we can provide a complete
-                            offering or just the pieces you need.
+                    <div class="services-border-cutter">
+                        <p class="services-border-cutter__help-text">
+                            text
                         </p>
+                        <div class="services-wrapper">
+                            <h2 class="services__title">
+                                SERVICES
+                            </h2>
+                            <p class="services__text">
+                                Before we sign a contract or write a line of code our team will spend the necessary time
+                                needed
+                                to understand your product vision. Based on your requirements, we can provide a complete
+                                offering or just the pieces you need.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -249,20 +252,13 @@
     <footer class="main-footer">
         <div class="container">
             <p class="main-footer__copyright">
-                © 2014. All Rights Reserved Ellipsis.com
+                © 2021. All Rights Reserved Ellipsis.com
             </p>
         </div>
     </footer>
 
-    <script src="scripts/size.js"></script>
     <script src="scripts/promoScroll.js"></script>
 
 </body>
 
 </html>
-
-<!-- scroll icon animation  -->
-<!-- https://codemyui.com/scroll-icon-animation/ -->
-
-<!-- scroll intoWeiv js -->
-<!-- https://proweb63.ru/help/js/smooth-scroll-by-js -->
