@@ -270,7 +270,20 @@ a {
 
 .activities .activity__image {
   width: 5rem;
+  margin-bottom: 3.125rem;
   fill: #3c3c3c;
+}
+
+.activities .activity__image--first {
+  height: 5.25rem;
+}
+
+.activities .activity__image--second {
+  height: 4.75rem;
+}
+
+.activities .activity__image--third {
+  height: 5.75rem;
 }
 
 .activities .activity__text {
@@ -369,4 +382,66 @@ a {
   color: #3c3c3c;
   font-size: 16px;
   font-weight: 300;
+}
+
+.promo__logo-link {
+  margin-top: 18.25rem;
+  margin-bottom: 4.5rem;
+}
+
+.promo__title {
+  letter-spacing: 18.08px;
+  margin-bottom: 1.5rem;
+}
+
+.promo__text {
+  margin-bottom: 12.75rem;
+}
+
+.about__text {
+  margin-bottom: 3rem;
+}
+
+.services__title {
+  margin-bottom: 2.25rem;
+}
+
+.services__text {
+  width: 68.25%;
+  margin-bottom: 3.5rem;
+}
+
+.activities__title {
+  margin-bottom: 5.5rem;
+}
+
+.activity__title {
+  margin-bottom: 1rem !important;
+}
+
+.activity {
+  margin-bottom: 8rem !important;
+}
+
+.activity:last-of-type {
+  margin-bottom: 5rem !important;
+}
+
+.contacts {
+  padding-bottom: 0;
+  margin-bottom: 4.5rem;
+}
+
+.contacts__title {
+  margin-bottom: 2rem;
+}
+
+.contacts__text {
+  width: 60%;
+  margin-bottom: 2.5rem;
+  font-size: 1.25rem;
+}
+
+.contacts__button {
+  width: 45%;
 }
