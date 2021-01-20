@@ -6,40 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ellipsis</title>
     <!-- icon -->
-    <link rel="shortcut icon" href="assets/img/favicon.svg" type="image/svg">
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/svg">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <!-- styles -->
-    <link rel="stylesheet" href="css/preloader.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/interactivity.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
     <div class="preloader" id="preloader">
-        <div class="windows8">
-            <div class="wBall" id="wBall_1">
-                <div class="wInnerBall"></div>
-            </div>
-            <div class="wBall" id="wBall_2">
-                <div class="wInnerBall"></div>
-            </div>
-            <div class="wBall" id="wBall_3">
-                <div class="wInnerBall"></div>
-            </div>
-            <div class="wBall" id="wBall_4">
-                <div class="wInnerBall"></div>
-            </div>
-            <div class="wBall" id="wBall_5">
-                <div class="wInnerBall"></div>
-            </div>
-        </div>
+
+        <div class="preloader__image"></div>
+
     </div>
+
     <!-- sprite -->
     <svg display="none">
 
@@ -81,13 +65,9 @@
             <div class="container">
                 <div class="promo-wrapper">
                     <a class="promo__logo-link" href="#">
-                        <svg class="promo__logo-image">
-                            <use xlink:href="#sprite__logo"></use>
-                        </svg>
+                        <img class="promo__logo" src="/assets/img/logo.png" alt="ellipsis">
                     </a>
-                    <h2 class="promo__title">
-                        WORKING <br>WITH design LAB
-                    </h2>
+                    <h2 class="promo__title">WORKING<br>WITH DESIGN LAB</h2>
                     <p class="promo__text">
                         We’ve been helping startups launch and grow their businesses. We help you to fill the gap
                         between
@@ -143,9 +123,9 @@
                         What we do
                     </h2>
 
-                    <div class="activities__activity activity">
+                    <div class="activities__activity activity activity--first">
 
-                        <svg class="activity__image activity__image--first">
+                        <svg class="activity__image">
                             <use xlink:href="#sprite__design"></use>
                         </svg>
 
@@ -160,9 +140,9 @@
 
                     </div>
 
-                    <div class="activities__activity activity">
+                    <div class="activities__activity activity activity--second">
 
-                        <svg class="activity__image activity__image--second">
+                        <svg class="activity__image">
                             <use xlink:href="#sprite__development"></use>
                         </svg>
 
@@ -177,9 +157,9 @@
 
                     </div>
 
-                    <div class="activities__activity activity">
+                    <div class="activities__activity activity activity--third">
 
-                        <svg class="activity__image activity__image--third">
+                        <svg class="activity__image">
                             <use xlink:href="#sprite__PM"></use>
                         </svg>
 
@@ -203,7 +183,7 @@
             <div class="container">
                 <div class="products-wrapper">
 
-                    <a class="products__product product" href="#">
+                    <a class="products__product product product--1" href="#">
 
                         <h2 class="product__name">
                             topworkz
@@ -212,35 +192,35 @@
 
                     </a>
 
-                    <a class="products__product product" href="#">
+                    <a class="products__product product product--2" href="#">
                         <img class="product__image" src="assets/img/item2.png" alt="product2">
                         <h2 class="product__name">
                             joint
                         </h2>
                     </a>
 
-                    <a class="products__product product" href="#">
+                    <a class="products__product product product--3" href="#">
                         <img class="product__image" src="assets/img/item3.png" alt="product3">
                         <h2 class="product__name">
                             market
                         </h2>
                     </a>
 
-                    <a class="products__product product" href="#">
+                    <a class="products__product product product--4" href="#">
                         <img class="product__image" src="assets/img/item4.png" alt="product4">
                         <h2 class="product__name">
                             worktop
                         </h2>
                     </a>
 
-                    <a class="products__product product" href="#">
+                    <a class="products__product product product--5" href="#">
                         <img class="product__image" src="assets/img/item5.png" alt="product5">
                         <h2 class="product__name">
                             lable
                         </h2>
                     </a>
 
-                    <a class="products__product product" href="#">
+                    <a class="products__product product product--6" href="#">
                         <img class="product__image" src="assets/img/item6.png" alt="product6">
                         <h2 class="product__name">
                             Kyiv
@@ -273,15 +253,15 @@
 
     <footer class="main-footer">
         <div class="container">
-            <p class="main-footer__copyright">
-                © 2021. All Rights Reserved Ellipsis.com
-            </p>
+            <div class="main-footer__copyright-wrapper">
+                <p class="main-footer__copyright-text">
+                    © 2021. All Rights Reserved Ellipsis.com
+                </p>
+            </div>
         </div>
     </footer>
 
-    <script src="scripts/preloader.js"></script>
-    <script src="scripts/promoScroll.js"></script>
-    <script src="scripts/size.js"></script>
+    <script src="script.js"></script>
 
 </body>
 
